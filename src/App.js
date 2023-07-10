@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import {Sidebar} from './componentes/Sidebar'
+import {Portada1} from './componentes/Portada1'
+import {Table} from './componentes/Table'
+import {Portada2} from './componentes/Portada2'
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Sidebar></Sidebar>
+      <Portada2></Portada2>
+      <Portada1></Portada1>
+    
+      <Table></Table>
+      
     </div>
   );
 }
